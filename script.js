@@ -304,7 +304,7 @@ if (smsAlertForm) {
 
         try {
             const response = await fetch(
-                "http://localhost:3000/api/subscribe",
+                "https://student-fund-prototype.onrender.com/api/subscribe",
                 {
                     method: "POST",
                     headers: {
