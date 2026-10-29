@@ -1,0 +1,751 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #243047;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #101c3a;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f5a6c8;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f5a6c8;
+}
+
+/* Homepage Hero */
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background: linear-gradient(135deg, #101c3a, #243f73);
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #e0e6f2;
+    margin-bottom: 30px;
+    max-width: 550px;
+}
+
+/* Main Button */
+.btn {
+    display: inline-block;
+    background-color: #f5a6c8;
+    color: #101c3a;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f9c6dc;
+}
+
+/* Scholarship Section */
+.scholarships {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.scholarships h2,
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #101c3a;
+}
+
+.section-description {
+    color: #687386;
+    margin-bottom: 35px;
+}
+
+/* Scholarship Cards */
+.scholarship-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.scholarship-card {
+    background-color: #ffffff;
+    padding: 30px 22px;
+    border: 1px solid #e5e9f2;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(16, 28, 58, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(16, 28, 58, 0.12);
+}
+
+.scholarship-card h3 {
+    color: #101c3a;
+    margin-bottom: 12px;
+}
+
+.scholarship-card p {
+    color: #687386;
+    margin-bottom: 22px;
+}
+
+.scholarship-card button {
+    background-color: #101c3a;
+    color: #ffffff;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.scholarship-card button:hover {
+    background-color: #304d83;
+}
+
+/* About Section */
+.about {
+    background-color: #f7f8fc;
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 20px auto 0;
+    color: #596579;
+}
+
+/* Footer */
+footer {
+    background-color: #101c3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .scholarship-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.search-container input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #d8deea;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-container input:focus {
+    border-color: #304d83;
+    box-shadow: 0 0 0 3px rgba(48, 77, 131, 0.12);
+}
+
+.search-container button {
+    padding: 14px 22px;
+    background-color: #101c3a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #304d83;
+}
+
+#searchMessage {
+    color: #687386;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        flex-direction: column;
+    }
+}
+/* Opportunity Listing Details */
+.opportunity-type {
+    display: inline-block;
+    background-color: #fde7f0;
+    color: #8c2454;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.opportunity-details {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e5e9f2;
+    text-align: left;
+}
+
+.opportunity-details ul {
+    padding-left: 22px;
+    margin: 10px 0;
+}
+
+.opportunity-details p {
+    margin-bottom: 12px;
+}
+
+.opportunity-details[hidden] {
+    display: none;
+}
+/* Application Checklist */
+.checklist-section {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.checklist-section h2 {
+    font-size: 32px;
+    color: #101c3a;
+    margin-bottom: 10px;
+}
+
+.checklist-container {
+    max-width: 600px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background-color: #f7f8fc;
+    border: 1px solid #e5e9f2;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 5px 18px rgba(16, 28, 58, 0.06);
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e9f2;
+}
+
+.checklist-item input {
+    width: 18px;
+    height: 18px;
+    accent-color: #304d83;
+    cursor: pointer;
+}
+
+.checklist-item label {
+    cursor: pointer;
+    color: #243047;
+}
+
+.progress-container {
+    width: 100%;
+    height: 12px;
+    margin-top: 25px;
+    background-color: #e0e5ef;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background-color: #f5a6c8;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+#progressText {
+    margin-top: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #101c3a;
+}
+
+/* Deadline countdown: green by default */
+.countdown {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #16a34a;
+    color: #101c3a;
+    border: 1px solid #15803d;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Fewer than 10 days remaining: orange */
+.countdown.urgent {
+    background-color: #f97316;
+    color: #ffffff;
+    border-color: #ea580c;
+}
+
+/* Deadline has passed: red */
+.countdown.expired {
+    background-color: #dc2626;
+    color: #ffffff;
+    border-color: #b91c1c;
+}
+/* Make the deadline date red */
+.deadline-date {
+    color: #dc2626;
+    font-weight: bold;
+}
+/* Eligibility Checker Section */
+#eligibility {
+max-width: 900px;
+margin: 40px auto;
+padding: 35px;
+background-color: #f8f9ff;
+border: 1px solid #dce2f0;
+border-radius: 16px;
+box-shadow: 0 5px 18px rgba(16, 28, 58, 0.08);
+}
+
+#eligibility h2 {
+color: #101c3a;
+text-align: center;
+margin-bottom: 12px;
+}
+
+#eligibility > p {
+color: #555;
+text-align: center;
+margin-bottom: 25px;
+line-height: 1.6;
+}
+
+#eligibilityForm {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+#eligibilityForm label {
+color: #101c3a;
+font-weight: bold;
+margin-top: 8px;
+}
+
+#eligibilityForm select {
+width: 100%;
+padding: 12px;
+border: 1px solid #cbd5e1;
+border-radius: 8px;
+background-color: #ffffff;
+color: #101c3a;
+font-size: 15px;
+}
+
+#eligibilityForm select:focus {
+outline: 2px solid #e879b9;
+border-color: #e879b9;
+}
+
+#eligibilityForm button {
+margin-top: 18px;
+padding: 14px;
+background-color: #101c3a;
+color: #ffffff;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#eligibilityForm button:hover {
+background-color: #e879b9;
+color: #101c3a;
+}
+
+/* Eligibility Checker Results */
+#eligibilityResults {
+margin-top: 25px;
+padding: 20px;
+background-color: #ffffff;
+border-left: 5px solid #e879b9;
+border-radius: 8px;
+line-height: 1.7;
+}
+
+#eligibilityResults:empty {
+display: none;
+}
+
+#eligibilityResults h3 {
+color: #101c3a;
+margin-bottom: 12px;
+}
+
+#eligibilityResults li {
+margin-bottom: 10px;
+}
+/* ==============================
+SMS ALERTS SECTION
+============================== */
+
+#sms-alerts {
+max-width: 700px;
+margin: 60px auto;
+padding: 35px;
+background: #ffffff;
+border-radius: 18px;
+box-shadow: 0 8px 25px rgba(15, 35, 75, 0.10);
+border-top: 5px solid #f3a6c8;
+}
+
+#sms-alerts h2 {
+color: #142850;
+text-align: center;
+font-size: 28px;
+margin-bottom: 12px;
+}
+
+#sms-alerts .section-description {
+color: #64748b;
+text-align: center;
+line-height: 1.7;
+margin-bottom: 28px;
+}
+
+#smsAlertForm {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+#smsAlertForm .form-group {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+#smsAlertForm label {
+color: #142850;
+font-weight: 600;
+}
+
+#smsAlertForm input[type="text"],
+#smsAlertForm input[type="tel"],
+#smsAlertForm select {
+width: 100%;
+padding: 13px 14px;
+border: 1px solid #d6dce8;
+border-radius: 9px;
+background: #f8fafc;
+color: #142850;
+font-size: 15px;
+box-sizing: border-box;
+transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#smsAlertForm input:focus,
+#smsAlertForm select:focus {
+outline: none;
+border-color: #e58bb5;
+box-shadow: 0 0 0 3px rgba(243, 166, 200, 0.25);
+}
+
+#smsAlertForm .consent-group {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+gap: 10px;
+padding: 14px;
+background: #fff5f9;
+border-radius: 9px;
+}
+
+#smsAlertForm .consent-group input {
+margin-top: 4px;
+accent-color: #142850;
+flex-shrink: 0;
+}
+
+#smsAlertForm .consent-group label {
+font-size: 13px;
+line-height: 1.6;
+font-weight: 400;
+}
+
+#smsSubscribeButton {
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 9px;
+background: #142850;
+color: #ffffff;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+transition: background 0.2s, transform 0.2s;
+}
+
+#smsSubscribeButton:hover {
+background: #203d70;
+transform: translateY(-2px);
+}
+
+#smsAlertMessage {
+text-align: center;
+font-size: 14px;
+line-height: 1.6;
+color: #142850;
+overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+#sms-alerts {
+margin: 35px 15px;
+padding: 24px 18px;
+}
+
+#sms-alerts h2 {
+    font-size: 23px;
+}
+
+}
+/* =====================================
+FURSAALERT SMS ALERTS - FULL DESIGN
+===================================== */
+
+#sms-alerts {
+max-width: 700px;
+margin: 60px auto;
+padding: 35px;
+background: #ffffff;
+border-radius: 18px;
+border-top: 5px solid #f3a6c8;
+box-shadow: 0 8px 25px rgba(15, 35, 75, 0.10);
+box-sizing: border-box;
+}
+
+#sms-alerts h2 {
+color: #142850;
+text-align: center;
+font-size: 28px;
+margin-bottom: 12px;
+}
+
+#sms-alerts .section-description {
+color: #64748b;
+text-align: center;
+line-height: 1.7;
+margin-bottom: 28px;
+}
+
+#smsAlertForm {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+#smsAlertForm .form-group {
+display: flex;
+flex-direction: column;
+gap: 8px;
+margin-bottom: 0;
+}
+
+#smsAlertForm label {
+color: #142850;
+font-size: 15px;
+font-weight: 600;
+}
+
+#smsAlertForm input[type="text"],
+#smsAlertForm input[type="tel"],
+#smsAlertForm select {
+display: block;
+width: 100%;
+min-height: 48px;
+padding: 12px 14px;
+border: 1px solid #d6dce8;
+border-radius: 9px;
+background-color: #f8fafc;
+color: #142850;
+font-family: inherit;
+font-size: 15px;
+box-sizing: border-box;
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#smsAlertForm input[type="text"]:focus,
+#smsAlertForm input[type="tel"]:focus,
+#smsAlertForm select:focus {
+outline: none;
+border-color: #e58bb5;
+box-shadow: 0 0 0 3px rgba(243, 166, 200, 0.25);
+}
+
+#smsAlertForm .consent-group {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+gap: 10px;
+padding: 15px;
+background: #fff5f9;
+border-radius: 9px;
+}
+
+#smsAlertForm .consent-group input[type="checkbox"] {
+margin-top: 4px;
+accent-color: #142850;
+flex-shrink: 0;
+}
+
+#smsAlertForm .consent-group label {
+font-size: 13px;
+line-height: 1.6;
+font-weight: 400;
+}
+
+#sms-alerts #smsSubscribeButton {
+display: block;
+width: 100%;
+min-height: 50px;
+padding: 14px 20px;
+background-color: #142850;
+color: #ffffff;
+border: none;
+border-radius: 9px;
+font-family: inherit;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+box-shadow: 0 4px 10px rgba(20, 40, 80, 0.15);
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#sms-alerts #smsSubscribeButton:hover {
+background-color: #203d70;
+transform: translateY(-2px);
+}
+
+#sms-alerts #smsSubscribeButton:focus-visible {
+outline: 3px solid #f3a6c8;
+outline-offset: 3px;
+}
+
+#sms-alerts #smsSubscribeButton:active {
+transform: translateY(0);
+}
+
+#smsAlertMessage {
+color: #142850;
+text-align: center;
+font-size: 14px;
+line-height: 1.6;
+overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+#sms-alerts {
+margin: 35px 15px;
+padding: 24px 18px;
+}
+
+#sms-alerts h2 {
+    font-size: 23px;
+}
+
+
+}
+
+
+
+
+
+
+
+

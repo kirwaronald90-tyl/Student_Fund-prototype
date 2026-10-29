@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FursaAlert | Find Your Opportunity</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">FursaAlert</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#scholarships">Scholarships</a></li>
+                <li><a href="#checklist">Checklist</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+ 
+        </nav>
+    </header>
+
+    <!-- Homepage -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h2>Your Education.<br>Your Opportunity.</h2>
+
+            <p>
+                Discover scholarships and bursaries, prepare your
+                applications, and stay ahead of every deadline.
+            </p>
+
+            <a href="#scholarships" class="btn">
+                Explore Opportunities
+            </a>
+
+        </div>
+
+    </section>
+    <!-- Eligibility Checker Section -->
+
+<section id="eligibility">
+    <h2>Find Funding That Matches You</h2>
+
+<p>
+    Answer a few questions to discover funding opportunities
+    that may match your circumstances.
+</p>
+
+<form id="eligibilityForm">
+
+    <label for="educationLevel">What is your education level?</label>
+    <select id="educationLevel" required>
+        <option value="">-- Select education level --</option>
+        <option value="secondary">Secondary School</option>
+        <option value="college">College or TVET</option>
+        <option value="undergraduate">Undergraduate University</option>
+        <option value="postgraduate">Postgraduate University</option>
+    </select>
+
+    <label for="fundingType">What type of funding are you looking for?</label>
+    <select id="fundingType" required>
+        <option value="">-- Select funding type --</option>
+        <option value="scholarship">Scholarship</option>
+        <option value="loan">Student Loan</option>
+        <option value="bursary">Bursary</option>
+        <option value="any">Any Type of Funding</option>
+    </select>
+
+    <label for="citizenship">Are you a Kenyan citizen?</label>
+    <select id="citizenship" required>
+        <option value="">-- Select an answer --</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="institutionType">Where do you study?</label>
+    <select id="institutionType" required>
+        <option value="">-- Select institution type --</option>
+        <option value="public-university">Public University</option>
+        <option value="private-university">Private University</option>
+        <option value="college">College or TVET Institution</option>
+        <option value="secondary">Secondary School</option>
+        <option value="none">Not Currently Enrolled</option>
+    </select>
+
+    <button type="submit">Find Opportunities</button>
+
+</form>
+
+<div id="eligibilityResults" aria-live="polite"></div>
+
+</section>
+
+
+    <!-- Scholarships Section -->
+    <section id="scholarships" class="scholarships">
+
+        <h2>Explore Opportunities</h2>
+
+        <p class="section-description">
+            Find funding opportunities that match your educational goals.
+        </p>
+<div class="search-container">
+    <input
+        type="text"
+        id="scholarshipSearch"
+        placeholder="Search scholarships or bursaries..."
+    >
+
+    <button type="button" id="searchButton">Search</button>
+</div>
+
+<p id="searchMessage" aria-live="polite"></p>
+
+
+        <div class="scholarship-container">
+
+           <div class="scholarship-card">
+    <span class="opportunity-type">GOVERNMENT FUNDING</span>
+
+<h3>Universities Fund Government Scholarship</h3>
+
+<p>
+    <strong>Provider:</strong> Universities Fund, Kenya
+</p>
+
+<p>
+    <strong>Funding:</strong> Partial tuition support based on assessed financial need.
+</p>
+
+<p>
+    <strong>Deadline:</strong>
+    <span class="deadline-date">Check official portal</span>
+</p>
+
+<p class="countdown">
+    Check the official portal for the current application status.
+</p>
+
+<button class="details-button">View Details</button>
+
+<div class="opportunity-details" hidden>
+    <h4>Eligibility Criteria</h4>
+
+    <ul>
+        <li>Must be a Kenyan citizen.</li>
+        <li>Must have sat KCSE in 2022 or later.</li>
+        <li>Must have been placed in a public university by KUCCPS.</li>
+        <li>Must submit an application through the official HEF portal.</li>
+    </ul>
+
+    <h4>Documents to Prepare</h4>
+
+    <ul>
+        <li>Valid email address and mobile phone number.</li>
+        <li>KCPE and KCSE index numbers and examination years.</li>
+        <li>University admission letter.</li>
+        <li>National ID or birth certificate, as applicable.</li>
+        <li>Passport-size photograph.</li>
+        <li>Parent or guardian details and any other documents requested by the portal.</li>
+    </ul>
+
+    <p>
+        <strong>Important:</strong>
+        Funding is not guaranteed. The award depends on the applicable eligibility rules and assessment of financial need.
+    </p>
+
+    <p>
+        <a href="https://www.hef.co.ke/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visit the Official HEF Application Portal
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.universitiesfund.go.ke/new-higher-education-funding-model/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Read the Official Universities Fund Guidelines
+        </a>
+    </p>
+</div>
+
+
+</div>
+
+
+<div class="scholarship-card">
+    <span class="opportunity-type">STUDENT LOAN</span>
+
+<h3>HELB Undergraduate Student Loan</h3>
+
+<p>
+    <strong>Provider:</strong> Higher Education Loans Board (HELB)
+</p>
+
+<p>
+    <strong>Funding:</strong> Financial support for eligible bachelor's degree students.
+</p>
+
+<p>
+    <strong>Deadline:</strong>
+    <span class="deadline-date">Check official portal</span>
+</p>
+
+<p class="countdown">
+    Check the official portal for current application dates.
+</p>
+
+<button class="details-button">View Details</button>
+
+<div class="opportunity-details" hidden>
+    <h4>Eligibility Criteria</h4>
+
+    <ul>
+        <li>Must meet the eligibility requirements of the relevant HELB loan programme.</li>
+        <li>For the undergraduate loan, applicants must be pursuing a bachelor's degree at a public or chartered private university within the East African Community.</li>
+        <li>Eligible students may include KUCCPS-placed, self-sponsored, parallel and Module II students.</li>
+        <li>Pre-university, certificate, diploma and postgraduate students are not eligible for this particular undergraduate loan.</li>
+    </ul>
+
+    <h4>Documents and Information to Prepare</h4>
+
+    <ul>
+        <li>Valid email address and telephone number.</li>
+        <li>KCPE and KCSE index numbers and examination years.</li>
+        <li>National ID or other identification required by the portal.</li>
+        <li>University admission letter.</li>
+        <li>Passport-size photograph.</li>
+        <li>Parent or guardian details and identification, where required.</li>
+        <li>Guarantor details, where required.</li>
+        <li>Valid bank or mobile payment details as specified by HELB.</li>
+    </ul>
+
+    <p>
+        <strong>Important:</strong>
+        A HELB loan is repayable. Approval and the amount awarded depend on the applicable programme rules and assessment. Check the official terms before applying.
+    </p>
+
+    <p>
+        <a href="https://www.helb.co.ke/helb-products/helb-loans/undergraduate-loans/"
+           target="_blank"
+           rel="noopener noreferrer">
+            View Official HELB Undergraduate Loan Information
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.hef.co.ke/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visit the HEF Student Portal
+        </a>
+    </p>
+</div>
+
+</div>
+
+
+<div class="scholarship-card">
+    <span class="opportunity-type">GOVERNMENT BURSARY</span>
+
+<h3>NGAAF Education Bursary</h3>
+
+<p>
+    <strong>Provider:</strong>
+    National Government Affirmative Action Fund (NGAAF)
+</p>
+
+<p>
+    <strong>Funding:</strong>
+    Education assistance for eligible students from needy and vulnerable backgrounds.
+</p>
+
+<p>
+    <strong>Deadline:</strong>
+    <span class="deadline-date">Check official portal</span>
+</p>
+
+<p class="countdown">
+    Contact your county NGAAF office for current application dates.
+</p>
+
+<button class="details-button">View Details</button>
+
+<div class="opportunity-details" hidden>
+    <h4>Eligibility Criteria</h4>
+
+    <ul>
+        <li>Must be a Kenyan citizen and resident of the county where the bursary is sought.</li>
+        <li>Must be a needy student attending an eligible educational institution.</li>
+        <li>Priority may be given to orphans and students living with disabilities.</li>
+        <li>Applicants must satisfy the current NGAAF bursary guidelines.</li>
+        <li>Support is subject to assessment and the availability of funds.</li>
+    </ul>
+
+    <h4>Documents to Prepare</h4>
+
+    <ul>
+        <li>A completed NGAAF bursary application form.</li>
+        <li>School or institution admission letter, for new applicants.</li>
+        <li>Current report card and fee structure, for continuing students.</li>
+        <li>Recommendation letter from the school or institution.</li>
+        <li>Recommendation letter from the area chief or community leader.</li>
+        <li>Death certificates or other relevant documents, where applicable for orphaned applicants.</li>
+        <li>Disclosure of other financial assistance received.</li>
+    </ul>
+
+    <p>
+        <strong>Important:</strong>
+        These are general requirements from NGAAF's published guidelines. Confirm the current form, required attachments and application process with your county NGAAF office.
+    </p>
+
+    <p>
+        <a href="https://ngaaf.go.ke/n/education/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Read Official NGAAF Education Information
+        </a>
+    </p>
+
+    <p>
+        <a href="https://ngaaf.go.ke/n/downloads/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Find Official NGAAF Forms
+        </a>
+    </p>
+
+    <p>
+        <a href="https://ngaaf.go.ke/n/contact/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Contact NGAAF
+        </a>
+    </p>
+</div>
+
+</div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+
+        <h2>About FursaAlert</h2>
+
+        <p>
+            FursaAlert helps students discover educational funding
+            opportunities, understand application requirements, prepare
+            documents, and keep track of important deadlines.
+        </p>
+
+    </section>
+<!-- Application Checklist -->
+<section id="checklist" class="checklist-section">
+
+    <h2>Application Checklist</h2>
+
+    <p class="section-description">
+        Keep track of the documents you have prepared.
+    </p>
+
+    <div class="checklist-container">
+
+        <div class="checklist-item">
+            <input type="checkbox" id="document1">
+            <label for="document1">Academic transcripts</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="document2">
+            <label for="document2">Proof of enrolment, if required</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="document3">
+            <label for="document3">Identification documents, if required</label>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="document4">
+            <label for="document4">Other required supporting documents</label>
+        </div>
+
+        <div class="progress-container">
+            <div id="progressBar"></div>
+        </div>
+
+        <p id="progressText" aria-live="polite">
+            0 of 4 tasks completed
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SMS Alerts Section -->
+
+<section id="sms-alerts">
+
+<h2>Get Funding Alerts via SMS</h2>
+
+<p class="section-description">
+    Never miss an opportunity! Receive reminders about scholarships,
+    bursaries, and student loans.
+</p>
+
+<form id="smsAlertForm" action="javascript:void(0);" method="post"></form>
+
+    <div class="form-group">
+        <label for="studentName">Your Name</label>
+        <input
+            type="text"
+            id="studentName"
+            name="studentName"
+            placeholder="Enter your full name"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="0712345678"
+            pattern="(?:\+254|254|0)(?:7|1)[0-9]{8}"
+            title="Enter a valid Kenyan mobile number."
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="fundingType">Choose Funding Alerts</label>
+
+        <select id="fundingType" name="fundingType" required>
+    <option value="">Select an opportunity type</option>
+    <option value="scholarships">Scholarships</option>
+    <option value="bursaries">Bursaries</option>
+    <option value="student-loans">Student Loans</option>
+    <option value="all">All Funding Opportunities</option>
+</select>
+
+    </div>
+
+    <div class="form-group consent-group">
+        <input
+            type="checkbox"
+            id="smsConsent"
+            name="smsConsent"
+            required
+        >
+
+        <label for="smsConsent">
+            I agree to receive SMS alerts from FursaAlert about funding
+            opportunities. I understand that I can withdraw my consent.
+        </label>
+    </div>
+
+    <button type="submit" id="smsSubscribeButton">
+        Subscribe to SMS Alerts
+    </button>
+
+    <p id="smsAlertMessage" role="status" aria-live="polite"></p>
+
+</form>
+
+</section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FursaAlert. Find the opportunity. Take the next step.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
