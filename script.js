@@ -224,7 +224,7 @@ event.preventDefault();
 // FursaAlert backend connection test
 async function testFursaAlertBackend() {
     try {
-        const response = await fetch("http://student-fund-prototype.onrender.com/");
+        const response = await fetch("https://student-fund-prototype.onrender.com/");
 
         if (!response.ok) {
             throw new Error("Backend connection failed.");
